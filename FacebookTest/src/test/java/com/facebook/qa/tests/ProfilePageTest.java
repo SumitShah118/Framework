@@ -19,8 +19,10 @@ public class ProfilePageTest extends TestBase {
 	
 	public ProfilePageTest() {
 		super();
+		
 	}
 	
+	//This is new commit
 	@BeforeMethod
 	public void setup() throws InterruptedException {
 		initialization();
