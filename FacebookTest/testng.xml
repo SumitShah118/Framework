@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Facebook Automation Test">
+	<test name="Facebook Test">
+		<classes>
+			<class name="com.facebook.qa.tests.LoginPageTest"></class>
+			<class name="com.facebook.qa.tests.HomePageTest"></class>
+			<class name="com.facebook.qa.tests.ProfilePageTest"></class>
+		</classes>
+	</test>
+</suite>
+	

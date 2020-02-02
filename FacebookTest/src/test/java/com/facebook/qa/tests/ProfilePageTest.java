@@ -47,7 +47,8 @@ public class ProfilePageTest extends TestBase {
 	
 	@Test(priority=3)
 	public void clickOnFacebookPageLogoTest() {
-		profilepage.clickOnFacebookLogo();
+		homepage = profilepage.clickOnFacebookLogo();
+		Assert.assertEquals(homepage.verifyHomePageTitle(), "Facebook", "Current page is not HomePage");
 	}
 	
 	@AfterMethod

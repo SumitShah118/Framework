@@ -34,6 +34,7 @@ public class TestUtil {
 			e.printStackTrace();
 		}
 		sheet = book.getSheet(sheetName);
+		
 		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
 
 		for (int i = 0; i < sheet.getLastRowNum(); i++) {
