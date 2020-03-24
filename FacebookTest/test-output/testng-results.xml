@@ -2,51 +2,51 @@
 <testng-results total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-01T10:54:13Z" name="Default suite" finished-at="2020-02-01T10:55:57Z" duration-ms="104407">
+  <suite started-at="2020-03-22T16:40:16Z" name="Default suite" finished-at="2020-03-22T16:41:39Z" duration-ms="83192">
     <groups>
     </groups>
-    <test started-at="2020-02-01T10:54:13Z" name="Default test" finished-at="2020-02-01T10:55:57Z" duration-ms="104407">
+    <test started-at="2020-03-22T16:40:16Z" name="Default test" finished-at="2020-03-22T16:41:39Z" duration-ms="83192">
       <class name="com.facebook.qa.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-02-01T16:24:13Z" name="setup" finished-at="2020-02-01T16:24:33Z" duration-ms="20056" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:10:16Z" name="setup" finished-at="2020-03-22T22:10:46Z" duration-ms="30455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginPageTitleTest()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-02-01T16:24:33Z" name="verifyLoginPageTitleTest" finished-at="2020-02-01T16:24:33Z" duration-ms="102" status="PASS">
+        <test-method signature="verifyLoginPageTitleTest()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:10:46Z" name="verifyLoginPageTitleTest" finished-at="2020-03-22T22:10:46Z" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-02-01T16:24:33Z" name="tearDown" finished-at="2020-02-01T16:24:35Z" duration-ms="2247" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:10:46Z" name="tearDown" finished-at="2020-03-22T22:10:47Z" duration-ms="872" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-02-01T16:24:35Z" name="setup" finished-at="2020-02-01T16:25:02Z" duration-ms="27175" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:10:47Z" name="setup" finished-at="2020-03-22T22:11:11Z" duration-ms="24071" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogoTest()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-02-01T16:25:02Z" name="verifyLogoTest" finished-at="2020-02-01T16:25:04Z" duration-ms="2010" status="FAIL">
+        <test-method signature="verifyLogoTest()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:11:11Z" name="verifyLogoTest" finished-at="2020-03-22T22:11:12Z" duration-ms="219" status="FAIL">
           <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
               <![CDATA[invalid selector: Unable to locate an element with the xpath expression //*[contains(@class,"fb_logo"]) because of the following error:
 SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[contains(@class,"fb_logo"])' is not a valid XPath expression.
-  (Session info: chrome=79.0.3945.130)
+  (Session info: chrome=80.0.3987.149)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RADHA-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12.0.1'
+System info: host: 'RADHA-PC', ip: '192.168.0.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 176bac13a9fd9e1b4d903aa51271fd08
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 79abaee54187341aff09a83f090aee3b
 *** Element info: {Using=xpath, value=//*[contains(@class,"fb_logo"])}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[contains(@class,"fb_logo"]) because of the following error:
 SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[contains(@class,"fb_logo"])' is not a valid XPath expression.
-  (Session info: chrome=79.0.3945.130)
+  (Session info: chrome=80.0.3987.149)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RADHA-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12.0.1'
+System info: host: 'RADHA-PC', ip: '192.168.0.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 176bac13a9fd9e1b4d903aa51271fd08
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 79abaee54187341aff09a83f090aee3b
 *** Element info: {Using=xpath, value=//*[contains(@class,"fb_logo"])}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -98,15 +98,15 @@ Session ID: 176bac13a9fd9e1b4d903aa51271fd08
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-02-01T16:25:04Z" name="tearDown" finished-at="2020-02-01T16:25:06Z" duration-ms="1236" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:11:12Z" name="tearDown" finished-at="2020-03-22T22:11:13Z" duration-ms="966" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-02-01T16:25:07Z" name="setup" finished-at="2020-02-01T16:25:47Z" duration-ms="40017" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:11:15Z" name="setup" finished-at="2020-03-22T22:11:35Z" duration-ms="19468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginFacebookPageTest(java.lang.String, java.lang.String)[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-02-01T16:25:47Z" name="loginFacebookPageTest" data-provider="getFacebookTestData" finished-at="2020-02-01T16:25:56Z" duration-ms="8455" status="PASS">
+        <test-method signature="loginFacebookPageTest(java.lang.String, java.lang.String)[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:11:35Z" name="loginFacebookPageTest" data-provider="getFacebookTestData" finished-at="2020-03-22T22:11:38Z" duration-ms="3251" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -122,7 +122,7 @@ Session ID: 176bac13a9fd9e1b4d903aa51271fd08
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFacebookPageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-02-01T16:25:56Z" name="tearDown" finished-at="2020-02-01T16:25:57Z" duration-ms="1352" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:11:38Z" name="tearDown" finished-at="2020-03-22T22:11:39Z" duration-ms="876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

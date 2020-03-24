@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Amazon Automation Test">
+	<test name="Amazon Test">
+		<classes>
+			<class name="in.amazon.qa.tests.LandingPageTest"></class>
+			<class name="in.amazon.qa.tests.LoginPageTest"></class>
+			<class name="in.amazon.qa.tests.HomePageTest"></class>
+			<class name="in.amazon.qa.tests.MobileListTest"></class>
+			<class name="in.amazon.qa.tests.MobileDetailsTest"></class>
+			<class name="in.amazon.qa.tests.PaymentTest"></class>
+			<class name="in.amazon.qa.tests.OrderReviewTest"
+		</classes>
+	</test>
+</suite>
