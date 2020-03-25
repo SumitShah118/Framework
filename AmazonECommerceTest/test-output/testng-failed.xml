@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="in.amazon.qa.tests.OrderReviewTest">
+      <class name="in.amazon.qa.tests.LoginPageTest">
         <methods>
-          <include name="verifyBillingHeaderTest"/>
-          <include name="verifyHeaderTest"/>
-          <include name="fillAddressTest"/>
+          <include name="tearDown"/>
           <include name="setup"/>
+          <include name="clickOnLoginPageTest"/>
         </methods>
-      </class> <!-- in.amazon.qa.tests.OrderReviewTest -->
+      </class> <!-- in.amazon.qa.tests.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
