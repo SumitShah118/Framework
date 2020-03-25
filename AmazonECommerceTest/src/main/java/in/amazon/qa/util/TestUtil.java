@@ -6,6 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -42,13 +44,23 @@ public class TestUtil extends TestBase{
 		}
 	}
 	
-	static String filePathAndName = System.getProperty("user.dir") + "/in/amazon/qa/testdata/TestDataForProject" +".xlsx" ;
-	public static void readDataFromExcel() throws FileNotFoundException {
+	static String filePathAndName = System.getProperty("user.dir") + "/src/main/java/in/amazon/qa/testdata/TestDataForProject.xlsx" ;
+	public static Object[][] readDataFromExcel(String sheetName) throws IOException {
 		File file = new File(filePathAndName);
 		FileInputStream fis=new FileInputStream(file);
-		
-		
+		XSSFWorkbook wb=new XSSFWorkbook(fis);
+		XSSFSheet sheet=wb.getSheet(sheetName);
+		int lastRow = sheet.getLastRowNum();
+		System.out.println("ROW COUNT "+lastRow);
+		int lastcol = sheet.getRow(0).getLastCellNum();
+		System.out.println("COLUMN COUNT "+lastcol);
+		Object cellValue[][]=new Object[lastRow][lastcol];
+		for(int i=1;i<=lastRow;i++) {
+			for(int j=0;j<lastcol;j++) {
+				cellValue[i][j] = sheet.getRow(i).getCell(j).getStringCellValue();
+				System.out.println(cellValue[i][j]);
+			}
+		}
+		return cellValue;
 	}
-	
-
 }
