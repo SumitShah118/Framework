@@ -3,9 +3,8 @@ package in.amazon.qa.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import in.amazon.qa.base.TestBase;
-import in.amazon.qa.util.TestUtil;
+
 
 public class OrderReviewPage extends TestBase {
 
@@ -59,7 +58,7 @@ public class OrderReviewPage extends TestBase {
 		return billingAddrHeader.getText();
 	}
 	
-	public HomePage fillAddress(String fullname, String phonenumber, String pincode, String address, String city, String state1) throws InterruptedException {
+	public HomePage fillAddress(String fullname, String phonenumber, String pincode, String address, String city, String state1) {
 		addAddr.click();
 		enterFullName.sendKeys(fullname);
 		enterPhoneNumber.sendKeys(phonenumber);
@@ -68,9 +67,7 @@ public class OrderReviewPage extends TestBase {
 		enterCity.sendKeys(city);
 		state.sendKeys(state1);
 		submitAddress.click();
-		
-		Thread.sleep(TestUtil.THREAD_SLEEP_TIMEOUT);
-		
+
 		Amazon_homepage.click();
 		return new HomePage();
 	}

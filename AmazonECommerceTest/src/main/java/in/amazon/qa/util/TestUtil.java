@@ -1,6 +1,7 @@
 package in.amazon.qa.util;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -39,6 +40,14 @@ public class TestUtil extends TestBase{
 		}catch(IOException e2) {
 			e2.printStackTrace();
 		}
+	}
+	
+	static String filePathAndName = System.getProperty("user.dir") + "/in/amazon/qa/testdata/TestDataForProject" +".xlsx" ;
+	public static void readDataFromExcel() throws FileNotFoundException {
+		File file = new File(filePathAndName);
+		FileInputStream fis=new FileInputStream(file);
+		
+		
 	}
 	
 
