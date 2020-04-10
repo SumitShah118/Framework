@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Facebook Automation Test]">
+  <test name="Facebook Test(failed)">
+    <classes>
+      <class name="com.facebook.qa.tests.ProfilePageTest">
+        <methods>
+          <include name="verifyProfilePageNameTest"/>
+          <include name="verifyProfilePageTitleTest"/>
+          <include name="clickOnFacebookPageLogoTest"/>
+          <include name="extentReportSetup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.facebook.qa.tests.ProfilePageTest -->
+      <class name="com.facebook.qa.tests.HomePageTest">
+        <methods>
+          <include name="startUp"/>
+          <include name="clickOnProfileLinkTest"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.facebook.qa.tests.HomePageTest -->
+      <class name="com.facebook.qa.tests.LoginPageTest">
+        <methods>
+          <include name="verifyLogoTest"/>
+          <include name="tearDown"/>
+          <include name="startUp"/>
+          <include name="sedtup"/>
+        </methods>
+      </class> <!-- com.facebook.qa.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Facebook Test(failed) -->
+</suite> <!-- Failed suite [Facebook Automation Test] -->
