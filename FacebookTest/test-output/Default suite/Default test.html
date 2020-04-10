@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 22 22:10:16 IST 2020</td>
+<td>Started on:</td><td>Fri Apr 10 11:39:19 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>83 seconds (83192 ms)</td>
+<tr><td>Total time:</td><td>83 seconds (83967 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.facebook.qa.tests.LoginPageTest.verifyLogoTest()'><b>verifyLogoTest</b><br>Test class: com.facebook.qa.tests.LoginPageTest</td>
-<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[contains(@class,&quot;fb_logo&quot;]) because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//*[contains(@class,&quot;fb_logo&quot;])&apos; is not a valid XPath expression.
-  (Session info: chrome=80.0.3987.149)
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //i[contains(@class,&quot;fb_logo&quot;]) because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//i[contains(@class,&quot;fb_logo&quot;])&apos; is not a valid XPath expression.
+  (Session info: chrome=80.0.3987.163)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;RADHA-PC&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;12.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 79abaee54187341aff09a83f090aee3b
-*** Element info: {Using=xpath, value=//*[contains(@class,&quot;fb_logo&quot;])}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7a9b9f86dcd1e3204518f593a2dbce8a
+*** Element info: {Using=xpath, value=//i[contains(@class,&quot;fb_logo&quot;])}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -103,9 +103,9 @@ Session ID: 79abaee54187341aff09a83f090aee3b
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
 	at com.facebook.qa.pages.LoginPage.verifyFacebookLogo(LoginPage.java:33)
-	at com.facebook.qa.tests.LoginPageTest.verifyLogoTest(LoginPageTest.java:39)
+	at com.facebook.qa.tests.LoginPageTest.verifyLogoTest(LoginPageTest.java:55)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -130,17 +130,17 @@ Session ID: 79abaee54187341aff09a83f090aee3b
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace314364096", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace314364096'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[contains(@class,&quot;fb_logo&quot;]) because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//*[contains(@class,&quot;fb_logo&quot;])&apos; is not a valid XPath expression.
-  (Session info: chrome=80.0.3987.149)
+</pre></div><a href='#' onClick='toggleBox("stack-trace605686842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace605686842'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //i[contains(@class,&quot;fb_logo&quot;]) because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//i[contains(@class,&quot;fb_logo&quot;])&apos; is not a valid XPath expression.
+  (Session info: chrome=80.0.3987.163)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;RADHA-PC&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;12.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 79abaee54187341aff09a83f090aee3b
-*** Element info: {Using=xpath, value=//*[contains(@class,&quot;fb_logo&quot;])}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7a9b9f86dcd1e3204518f593a2dbce8a
+*** Element info: {Using=xpath, value=//i[contains(@class,&quot;fb_logo&quot;])}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -158,9 +158,9 @@ Session ID: 79abaee54187341aff09a83f090aee3b
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
 	at com.facebook.qa.pages.LoginPage.verifyFacebookLogo(LoginPage.java:33)
-	at com.facebook.qa.tests.LoginPageTest.verifyLogoTest(LoginPageTest.java:39)
+	at com.facebook.qa.tests.LoginPageTest.verifyLogoTest(LoginPageTest.java:55)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -187,7 +187,7 @@ Session ID: 79abaee54187341aff09a83f090aee3b
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.facebook.qa.tests.LoginPageTest@548a102f</td></tr>
+<td>com.facebook.qa.tests.LoginPageTest@17c1bced</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -199,13 +199,13 @@ Session ID: 79abaee54187341aff09a83f090aee3b
 <tr>
 <td title='com.facebook.qa.tests.LoginPageTest.loginFacebookPageTest()'><b>loginFacebookPageTest</b><br>Test class: com.facebook.qa.tests.LoginPageTest<br>Parameters: radha8792@gmail.com, radhakrishna87</td>
 <td></td>
-<td>3</td>
-<td>com.facebook.qa.tests.LoginPageTest@548a102f</td></tr>
+<td>2</td>
+<td>com.facebook.qa.tests.LoginPageTest@17c1bced</td></tr>
 <tr>
 <td title='com.facebook.qa.tests.LoginPageTest.verifyLoginPageTitleTest()'><b>verifyLoginPageTitleTest</b><br>Test class: com.facebook.qa.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.facebook.qa.tests.LoginPageTest@548a102f</td></tr>
+<td>com.facebook.qa.tests.LoginPageTest@17c1bced</td></tr>
 </table><p>
 </body>
 </html>

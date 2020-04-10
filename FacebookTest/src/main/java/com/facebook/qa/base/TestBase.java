@@ -3,23 +3,36 @@ package com.facebook.qa.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.BeforeSuite;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.facebook.qa.util.TestUtil;
 
 public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties prop;
+	//public static String filePath=System.getProperty("user.dir")+"/target/myExtentReport.html";
+	public static ExtentHtmlReporter reporter;
+	public static ExtentReports extent;
+	public static ExtentTest logger;
+	
+	@BeforeSuite
+	public void extentReportSetup() {
+		String filePath = System.getProperty("user.dir")+ "/target/myExtentReport"+TestUtil.getCurrentDateTime()+".html";
+	    reporter = new ExtentHtmlReporter(filePath);
+		extent = new ExtentReports();
+		extent.attachReporter(reporter);
+	}
 	
 	public TestBase(){
 		try {

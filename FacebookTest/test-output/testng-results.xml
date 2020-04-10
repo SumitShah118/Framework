@@ -1,53 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="2" failed="1" skipped="0">
+<testng-results total="9" passed="3" failed="3" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-22T16:40:16Z" name="Default suite" finished-at="2020-03-22T16:41:39Z" duration-ms="83192">
+  <suite started-at="2020-04-10T06:12:52Z" name="Facebook Automation Test" finished-at="2020-04-10T06:17:38Z" duration-ms="286547">
     <groups>
     </groups>
-    <test started-at="2020-03-22T16:40:16Z" name="Default test" finished-at="2020-03-22T16:41:39Z" duration-ms="83192">
-      <class name="com.facebook.qa.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:10:16Z" name="setup" finished-at="2020-03-22T22:10:46Z" duration-ms="30455" status="PASS">
+    <test started-at="2020-04-10T06:12:52Z" name="Facebook Test" finished-at="2020-04-10T06:17:38Z" duration-ms="286547">
+      <class name="com.facebook.qa.tests.HomePageTest">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:com.facebook.qa.tests.HomePageTest@5c1a8622]" started-at="2020-04-10T11:42:52Z" name="startUp" finished-at="2020-04-10T11:42:52Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@3c153a1]" started-at="2020-04-10T11:42:52Z" name="startUp" finished-at="2020-04-10T11:42:52Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.facebook.qa.tests.HomePageTest@5c1a8622]" started-at="2020-04-10T11:44:02Z" name="setup" finished-at="2020-04-10T11:44:15Z" duration-ms="13444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginPageTitleTest()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:10:46Z" name="verifyLoginPageTitleTest" finished-at="2020-03-22T22:10:46Z" duration-ms="46" status="PASS">
+        <test-method signature="verifyHomePageTitleTest()[pri:0, instance:com.facebook.qa.tests.HomePageTest@5c1a8622]" started-at="2020-04-10T11:44:15Z" name="verifyHomePageTitleTest" finished-at="2020-04-10T11:44:55Z" duration-ms="40128" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RADHA-PC', ip: '192.168.0.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50723}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b6afbbdb057b478f15ecf40d3ceca6e0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RADHA-PC', ip: '192.168.0.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50723}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b6afbbdb057b478f15ecf40d3ceca6e0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at com.facebook.qa.pages.HomePage.verifyHomePageTitle(HomePage.java:23)
+	at com.facebook.qa.tests.HomePageTest.verifyHomePageTitleTest(HomePageTest.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:10:46Z" name="tearDown" finished-at="2020-03-22T22:10:47Z" duration-ms="872" status="PASS">
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.facebook.qa.tests.HomePageTest@5c1a8622]" started-at="2020-04-10T11:44:55Z" name="tearDown" finished-at="2020-04-10T11:45:24Z" duration-ms="28628" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageTitleTest status=FAILURE method=HomePageTest.verifyHomePageTitleTest()[pri:0, instance:com.facebook.qa.tests.HomePageTest@5c1a8622] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:10:47Z" name="setup" finished-at="2020-03-22T22:11:11Z" duration-ms="24071" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.facebook.qa.tests.HomePageTest@5c1a8622]" started-at="2020-04-10T11:45:24Z" name="setup" finished-at="2020-04-10T11:45:40Z" duration-ms="16146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogoTest()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:11:11Z" name="verifyLogoTest" finished-at="2020-03-22T22:11:12Z" duration-ms="219" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+        <test-method signature="verifyHomePageLabelTest()[pri:0, instance:com.facebook.qa.tests.HomePageTest@5c1a8622]" started-at="2020-04-10T11:45:40Z" name="verifyHomePageLabelTest" finished-at="2020-04-10T11:46:16Z" duration-ms="35819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageLabelTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.facebook.qa.tests.HomePageTest@5c1a8622]" started-at="2020-04-10T11:46:16Z" name="tearDown" finished-at="2020-04-10T11:46:18Z" duration-ms="2132" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageLabelTest status=SUCCESS method=HomePageTest.verifyHomePageLabelTest()[pri:0, instance:com.facebook.qa.tests.HomePageTest@5c1a8622] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.facebook.qa.tests.HomePageTest@5c1a8622]" started-at="2020-04-10T11:46:18Z" name="setup" finished-at="2020-04-10T11:46:33Z" duration-ms="14842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickOnProfileLinkTest()[pri:0, instance:com.facebook.qa.tests.HomePageTest@5c1a8622]" started-at="2020-04-10T11:46:33Z" name="clickOnProfileLinkTest" finished-at="2020-04-10T11:46:58Z" duration-ms="25291" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //*[contains(@class,"fb_logo"]) because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[contains(@class,"fb_logo"])' is not a valid XPath expression.
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+              <![CDATA[element click intercepted: Element <div dir="ltr" class="linkWrap noCount">...</div> is not clickable at point (155, 69). Other element would receive the click: <div class="_3ixn"></div>
+  (Session info: chrome=80.0.3987.163)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RADHA-PC', ip: '192.168.0.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 79abaee54187341aff09a83f090aee3b
-*** Element info: {Using=xpath, value=//*[contains(@class,"fb_logo"])}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5110481008d231314d5426ff313accc4]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[contains(@class,"fb_logo"]) because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[contains(@class,"fb_logo"])' is not a valid XPath expression.
-  (Session info: chrome=80.0.3987.149)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div dir="ltr" class="linkWrap noCount">...</div> is not clickable at point (155, 69). Other element would receive the click: <div class="_3ixn"></div>
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RADHA-PC', ip: '192.168.0.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5110481008d231314d5426ff313accc4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.facebook.qa.pages.HomePage.clickOnProfileLink(HomePage.java:31)
+	at com.facebook.qa.tests.HomePageTest.clickOnProfileLinkTest(HomePageTest.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnProfileLinkTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.facebook.qa.tests.HomePageTest@5c1a8622]" started-at="2020-04-10T11:46:58Z" name="tearDown" finished-at="2020-04-10T11:47:02Z" duration-ms="4279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOnProfileLinkTest status=FAILURE method=HomePageTest.clickOnProfileLinkTest()[pri:0, instance:com.facebook.qa.tests.HomePageTest@5c1a8622] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.facebook.qa.tests.HomePageTest -->
+      <class name="com.facebook.qa.tests.LoginPageTest">
+        <test-method is-config="true" signature="sedtup()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@3c153a1]" started-at="2020-04-10T11:42:52Z" name="sedtup" finished-at="2020-04-10T11:43:05Z" duration-ms="13047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sedtup -->
+        <test-method signature="verifyLoginPageTitleTest()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@3c153a1]" started-at="2020-04-10T11:43:05Z" name="verifyLoginPageTitleTest" finished-at="2020-04-10T11:43:05Z" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.facebook.qa.tests.LoginPageTest@3c153a1]" started-at="2020-04-10T11:43:05Z" name="tearDown" finished-at="2020-04-10T11:43:09Z" duration-ms="3979" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginPageTitleTest status=SUCCESS method=LoginPageTest.verifyLoginPageTitleTest()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@3c153a1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="sedtup()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@3c153a1]" started-at="2020-04-10T11:43:09Z" name="sedtup" finished-at="2020-04-10T11:43:20Z" duration-ms="11436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sedtup -->
+        <test-method signature="verifyLogoTest()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@3c153a1]" started-at="2020-04-10T11:43:20Z" name="verifyLogoTest" finished-at="2020-04-10T11:43:20Z" duration-ms="93" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //i[contains(@class,"fb_logo"]) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//i[contains(@class,"fb_logo"])' is not a valid XPath expression.
+  (Session info: chrome=80.0.3987.163)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RADHA-PC', ip: '192.168.0.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 79abaee54187341aff09a83f090aee3b
-*** Element info: {Using=xpath, value=//*[contains(@class,"fb_logo"])}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50645}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0b739ee136d7312cc8481af49e541722
+*** Element info: {Using=xpath, value=//i[contains(@class,"fb_logo"])}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //i[contains(@class,"fb_logo"]) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//i[contains(@class,"fb_logo"])' is not a valid XPath expression.
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RADHA-PC', ip: '192.168.0.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50645}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0b739ee136d7312cc8481af49e541722
+*** Element info: {Using=xpath, value=//i[contains(@class,"fb_logo"])}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -65,9 +265,9 @@ Session ID: 79abaee54187341aff09a83f090aee3b
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
 	at com.facebook.qa.pages.LoginPage.verifyFacebookLogo(LoginPage.java:33)
-	at com.facebook.qa.tests.LoginPageTest.verifyLogoTest(LoginPageTest.java:39)
+	at com.facebook.qa.tests.LoginPageTest.verifyLogoTest(LoginPageTest.java:55)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -98,15 +298,22 @@ Session ID: 79abaee54187341aff09a83f090aee3b
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:11:12Z" name="tearDown" finished-at="2020-03-22T22:11:13Z" duration-ms="966" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.facebook.qa.tests.LoginPageTest@3c153a1]" started-at="2020-04-10T11:43:20Z" name="tearDown" finished-at="2020-04-10T11:43:24Z" duration-ms="3475" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogoTest status=FAILURE method=LoginPageTest.verifyLogoTest()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@3c153a1] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:11:15Z" name="setup" finished-at="2020-03-22T22:11:35Z" duration-ms="19468" status="PASS">
+        <test-method is-config="true" signature="sedtup()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@3c153a1]" started-at="2020-04-10T11:43:25Z" name="sedtup" finished-at="2020-04-10T11:43:36Z" duration-ms="10942" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginFacebookPageTest(java.lang.String, java.lang.String)[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:11:35Z" name="loginFacebookPageTest" data-provider="getFacebookTestData" finished-at="2020-03-22T22:11:38Z" duration-ms="3251" status="PASS">
+        </test-method> <!-- sedtup -->
+        <test-method signature="loginFacebookPageTest(java.lang.String, java.lang.String)[pri:0, instance:com.facebook.qa.tests.LoginPageTest@3c153a1]" started-at="2020-04-10T11:43:36Z" name="loginFacebookPageTest" data-provider="getFacebookTestData" finished-at="2020-04-10T11:43:58Z" duration-ms="22205" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -122,11 +329,128 @@ Session ID: 79abaee54187341aff09a83f090aee3b
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFacebookPageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.tests.LoginPageTest@548a102f]" started-at="2020-03-22T22:11:38Z" name="tearDown" finished-at="2020-03-22T22:11:39Z" duration-ms="876" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.facebook.qa.tests.LoginPageTest@3c153a1]" started-at="2020-04-10T11:43:58Z" name="tearDown" finished-at="2020-04-10T11:44:02Z" duration-ms="3221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginFacebookPageTest status=SUCCESS method=LoginPageTest.loginFacebookPageTest(java.lang.String, java.lang.String)[pri:0, instance:com.facebook.qa.tests.LoginPageTest@3c153a1] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.facebook.qa.tests.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.facebook.qa.tests.ProfilePageTest">
+        <test-method is-config="true" signature="extentReportSetup()[pri:0, instance:com.facebook.qa.tests.ProfilePageTest@4b168fa9]" started-at="2020-04-10T11:42:51Z" name="extentReportSetup" finished-at="2020-04-10T11:42:52Z" duration-ms="411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentReportSetup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.facebook.qa.tests.ProfilePageTest@4b168fa9]" started-at="2020-04-10T11:47:02Z" name="setup" finished-at="2020-04-10T11:47:02Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <div dir="ltr" class="linkWrap noCount">...</div> is not clickable at point (155, 69). Other element would receive the click: <div class="_3ixn"></div>
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RADHA-PC', ip: '192.168.0.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50990}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 04122ad4dc99e2127404e4b36efa1ee1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div dir="ltr" class="linkWrap noCount">...</div> is not clickable at point (155, 69). Other element would receive the click: <div class="_3ixn"></div>
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RADHA-PC', ip: '192.168.0.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Radha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50990}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 04122ad4dc99e2127404e4b36efa1ee1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.facebook.qa.pages.HomePage.clickOnProfileLink(HomePage.java:31)
+	at com.facebook.qa.tests.ProfilePageTest.setup(ProfilePageTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyProfilePageTitleTest()[pri:0, instance:com.facebook.qa.tests.ProfilePageTest@4b168fa9]" started-at="2020-04-10T11:47:38Z" name="verifyProfilePageTitleTest" finished-at="2020-04-10T11:47:38Z" duration-ms="5" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProfilePageTitleTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.facebook.qa.tests.ProfilePageTest@4b168fa9]" started-at="2020-04-10T11:47:38Z" name="tearDown" finished-at="2020-04-10T11:47:38Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.facebook.qa.tests.ProfilePageTest@4b168fa9]" started-at="2020-04-10T11:47:38Z" name="setup" finished-at="2020-04-10T11:47:38Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyProfilePageNameTest()[pri:0, instance:com.facebook.qa.tests.ProfilePageTest@4b168fa9]" started-at="2020-04-10T11:47:38Z" name="verifyProfilePageNameTest" finished-at="2020-04-10T11:47:38Z" duration-ms="38" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProfilePageNameTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.facebook.qa.tests.ProfilePageTest@4b168fa9]" started-at="2020-04-10T11:47:38Z" name="tearDown" finished-at="2020-04-10T11:47:38Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.facebook.qa.tests.ProfilePageTest@4b168fa9]" started-at="2020-04-10T11:47:38Z" name="setup" finished-at="2020-04-10T11:47:38Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickOnFacebookPageLogoTest()[pri:0, instance:com.facebook.qa.tests.ProfilePageTest@4b168fa9]" started-at="2020-04-10T11:47:38Z" name="clickOnFacebookPageLogoTest" finished-at="2020-04-10T11:47:38Z" duration-ms="36" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnFacebookPageLogoTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.facebook.qa.tests.ProfilePageTest@4b168fa9]" started-at="2020-04-10T11:47:38Z" name="tearDown" finished-at="2020-04-10T11:47:38Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.facebook.qa.tests.ProfilePageTest -->
+    </test> <!-- Facebook Test -->
+  </suite> <!-- Facebook Automation Test -->
 </testng-results>

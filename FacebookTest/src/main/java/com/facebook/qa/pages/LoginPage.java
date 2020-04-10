@@ -17,7 +17,7 @@ public class LoginPage extends TestBase {
 	@FindBy(id="u_0_b")
 	WebElement loginBtn;
 	
-	@FindBy(xpath="//*[contains(@class,\"fb_logo\"])")
+	@FindBy(xpath="//i[contains(@class,\"fb_logo\"])")
 	WebElement facebookLogo;
 	
 	public LoginPage() {
