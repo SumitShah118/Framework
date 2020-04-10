@@ -21,7 +21,6 @@ public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties prop;
-	//public static String filePath=System.getProperty("user.dir")+"/target/myExtentReport.html";
 	public static ExtentHtmlReporter reporter;
 	public static ExtentReports extent;
 	public static ExtentTest logger;
